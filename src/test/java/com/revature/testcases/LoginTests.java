@@ -42,7 +42,6 @@ public class LoginTests {
 
     @Test
     public void validLogin() {
-        logger.info("<<< validLogin test started >>>");
         //Step 1: go to login page
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
@@ -65,15 +64,11 @@ public class LoginTests {
         String expected = "http://ec2-44-204-37-74.compute-1.amazonaws.com/success.html";
 
         Assert.assertEquals(actual, expected);
-
-        logger.info(" <<< validLogin test ended >>>");
     }
 
     //Exercise assigned by Bach: Do the negative testcases
     @Test
     public void validUsernameInvalidPassword(){
-        logger.info("<<< validUsernameInvalidPassword test started >>>");
-
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -89,14 +84,10 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        logger.info(" <<< validUsernameInvalidPassword test ended >>>");
     }
 
     @Test
     public void invalidUsernameInvalidPassword(){
-        logger.info(" <<< invalidUsernameInvalidPassword test started >>>");
-
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -111,14 +102,10 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        logger.info(" <<< invalidUsernameInvalidPassword test ended >>>");
     }
 
     @Test
     public void invalidUsernameValidPassword(){
-        logger.info(" <<< invalidUsernameValidPassword test started >>>");
-
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -133,7 +120,5 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
-
-        logger.info(" <<< invalidUsernameValidPassword test ended >>>");
     }
 }
