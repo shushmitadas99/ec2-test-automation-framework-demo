@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,6 +20,8 @@ import java.time.Duration;
 
 public class LoginTests {
     public static WebDriver driver;
+
+    Logger logger = LoggerFactory.getLogger(LoginTests.class);
 
     @BeforeMethod
     public void setup() {
@@ -38,6 +42,7 @@ public class LoginTests {
 
     @Test
     public void validLogin() {
+        logger.info("<<< validLogin test started >>>");
         //Step 1: go to login page
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
@@ -46,9 +51,6 @@ public class LoginTests {
 
         loginPage.typeUsername("jane_doe");
         loginPage.typePassword("pass123");
-
-//        usernameInput.sendKeys();
-//        passwordInput.sendKeys();
 
         //Step3: click login
         loginPage.clickLoginButton();
@@ -63,11 +65,15 @@ public class LoginTests {
         String expected = "http://ec2-44-204-37-74.compute-1.amazonaws.com/success.html";
 
         Assert.assertEquals(actual, expected);
+
+        logger.info(" <<< validLogin test ended >>>");
     }
 
     //Exercise assigned by Bach: Do the negative testcases
     @Test
     public void validUsernameInvalidPassword(){
+        logger.info("<<< validUsernameInvalidPassword test started >>>");
+
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -83,10 +89,14 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
+
+        logger.info(" <<< validUsernameInvalidPassword test ended >>>");
     }
 
     @Test
     public void invalidUsernameInvalidPassword(){
+        logger.info(" <<< invalidUsernameInvalidPassword test started >>>");
+
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -101,10 +111,14 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
+
+        logger.info(" <<< invalidUsernameInvalidPassword test ended >>>");
     }
 
     @Test
     public void invalidUsernameValidPassword(){
+        logger.info(" <<< invalidUsernameValidPassword test started >>>");
+
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
@@ -119,5 +133,7 @@ public class LoginTests {
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
+
+        logger.info(" <<< invalidUsernameValidPassword test ended >>>");
     }
 }

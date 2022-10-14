@@ -1,0 +1,48 @@
+[Oct 14 2022 - 13:53:13] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:53:13] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:53:15] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 13:53:19] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test ended >>>
+[Oct 14 2022 - 13:53:20] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:53:20] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:53:21] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test started >>>
+[Oct 14 2022 - 13:53:22] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test ended >>>
+[Oct 14 2022 - 13:53:24] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:53:24] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:53:25] [main] INFO  com.revature.testcases.LoginTests - <<< validLogin test started >>>
+[Oct 14 2022 - 13:53:26] [main] INFO  com.revature.testcases.LoginTests -  <<< validLogin test ended >>>
+[Oct 14 2022 - 13:53:28] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:53:28] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:53:29] [main] INFO  com.revature.testcases.LoginTests - <<< validUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 13:53:30] [main] INFO  com.revature.testcases.LoginTests -  <<< validUsernameInvalidPassword test ended >>>
+[Oct 14 2022 - 13:59:21] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:59:21] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:59:24] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 13:59:25] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test ended >>>
+[Oct 14 2022 - 13:59:26] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:59:26] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:59:28] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test started >>>
+[Oct 14 2022 - 13:59:28] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test ended >>>
+[Oct 14 2022 - 13:59:30] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:59:30] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:59:31] [main] INFO  com.revature.testcases.LoginTests - <<< validLogin test started >>>
+[Oct 14 2022 - 13:59:32] [main] INFO  com.revature.testcases.LoginTests -  <<< validLogin test ended >>>
+[Oct 14 2022 - 13:59:34] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 13:59:34] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 13:59:35] [main] INFO  com.revature.testcases.LoginTests - <<< validUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 13:59:36] [main] INFO  com.revature.testcases.LoginTests -  <<< validUsernameInvalidPassword test ended >>>
+[Oct 14 2022 - 14:00:42] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 14:00:42] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 14:00:44] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 14:00:45] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameInvalidPassword test ended >>>
+[Oct 14 2022 - 14:00:47] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 14:00:47] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 14:00:48] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test started >>>
+[Oct 14 2022 - 14:00:49] [main] INFO  com.revature.testcases.LoginTests -  <<< invalidUsernameValidPassword test ended >>>
+[Oct 14 2022 - 14:00:51] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 14:00:51] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 14:00:52] [main] INFO  com.revature.testcases.LoginTests - <<< validLogin test started >>>
+[Oct 14 2022 - 14:00:53] [main] INFO  com.revature.testcases.LoginTests -  <<< validLogin test ended >>>
+[Oct 14 2022 - 14:00:54] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+[Oct 14 2022 - 14:00:54] [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shush\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+[Oct 14 2022 - 14:00:56] [main] INFO  com.revature.testcases.LoginTests - <<< validUsernameInvalidPassword test started >>>
+[Oct 14 2022 - 14:00:56] [main] INFO  com.revature.testcases.LoginTests -  <<< validUsernameInvalidPassword test ended >>>
