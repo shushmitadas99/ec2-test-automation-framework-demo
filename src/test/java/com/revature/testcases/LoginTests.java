@@ -1,5 +1,6 @@
 package com.revature.testcases;
 
+import com.revature.pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -41,15 +42,16 @@ public class LoginTests {
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Step 2: enter username and password
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("jane_doe");
-        passwordInput.sendKeys("pass123");
+        loginPage.typeUsername("jane_doe");
+        loginPage.typePassword("pass123");
+
+//        usernameInput.sendKeys();
+//        passwordInput.sendKeys();
 
         //Step3: click login
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.clickLoginButton();
 
         //Check expected vs. actual
         //See what URL you're on
@@ -69,23 +71,15 @@ public class LoginTests {
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("jane_doe");
-        passwordInput.sendKeys("pass1123");
+        loginPage.typeUsername("jane_doe");
+        loginPage.typePassword("pass1234");
+        loginPage.clickLoginButton();
 
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
 
         //Check expected vs. actual
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10)); //wait for a max of 10 secs
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='error-message']/p")));
-
-        //Create errorMessage WebElement
-        WebElement errorMessage = driver.findElement(By.xpath("//div[@id='error-message']/p"));
-
-        String actual = errorMessage.getText();
+        String actual = loginPage.getErrorMessage();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
@@ -96,23 +90,14 @@ public class LoginTests {
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("jayne_doe");
-        passwordInput.sendKeys("pass1123");
-
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.typeUsername("jayne_doe");
+        loginPage.typePassword("pass1123");
+        loginPage.clickLoginButton();
 
         //Check expected vs. actual
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10)); //wait for a max of 10 secs
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='error-message']/p")));
-
-        //Create errorMessage WebElement
-        WebElement errorMessage = driver.findElement(By.xpath("//div[@id='error-message']/p"));
-
-        String actual = errorMessage.getText();
+        String actual = loginPage.getErrorMessage();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
@@ -123,23 +108,14 @@ public class LoginTests {
         driver.get("http://ec2-44-204-37-74.compute-1.amazonaws.com/index.html");
 
         //Login steps
-        WebElement usernameInput = driver.findElement(By.id("username"));
-        WebElement passwordInput = driver.findElement(By.id("password"));
+        LoginPage loginPage = new LoginPage(driver);
 
-        usernameInput.sendKeys("jayne_doe");
-        passwordInput.sendKeys("pass123");
-
-        WebElement loginButton = driver.findElement(By.id("login-btn"));
-        loginButton.click();
+        loginPage.typeUsername("jayne_doe");
+        loginPage.typePassword("pass123");
+        loginPage.clickLoginButton();
 
         //Check expected vs. actual
-        WebDriverWait wdw = new WebDriverWait(driver, Duration.ofSeconds(10)); //wait for a max of 10 secs
-        wdw.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='error-message']/p")));
-
-        //Create errorMessage WebElement
-        WebElement errorMessage = driver.findElement(By.xpath("//div[@id='error-message']/p"));
-
-        String actual = errorMessage.getText();
+        String actual = loginPage.getErrorMessage();
         String expected = "Username and/or password is incorrect";
 
         Assert.assertEquals(actual, expected);
